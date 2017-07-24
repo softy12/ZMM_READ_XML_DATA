@@ -36,6 +36,6 @@ CALL METHOD cl_salv_table=>factory
 
 lo_col = lo_alv->get_columns( ).
 lo_col->set_optimize( ) .
-lo_fun = lo_->get_functions( ).
+lo_fun = lo_alv->get_functions( ).
 lo_fun->set_all( ).
 CALL METHOD lo_alv->display.
